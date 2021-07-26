@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  
+  overflow: hidden;
+}
+
+.gamecontainer{
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+.mario{
+    background-image: url(mario.png);
+    background-repeat: no-repeat;
+    width: 118px;
+    height: 150px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+ 
+
+#scorecont{
+    border-radius: 10px;
+    position: absolute;
+    background-color: black;
+    color: wheat;
+    top: 18px;
+    right: 20px;
+    padding: 10px;
+    width: 115px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.dragon{
+    background-image: url(dr.png);
+    background-repeat: no-repeat;
+    width: 144px;
+    height: 150px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+} 
+
+.animatemario{
+    animation: mario 0.5s linear;
+}
+
+@keyframes mario{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 350px;
+    }
+    100%{
+        bottom: 0px;
+    }
+    
+}
+.animategragon{
+    animation: dragon 5s linear infinite;
+}
+
+@keyframes dragon{
+    0%{
+        left: 100vw;
+    }
+    
+    100%{
+        left: -10vw;
+    }
+    
+}
+
+.gameover{
+    /* visibility: hidden; */
+    position: relative;
+    top: 70px;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family:sans-serif
+}
+
+.rights{
+    font-size: 15px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    opacity: 0.5;
+}
