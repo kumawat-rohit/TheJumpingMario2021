@@ -4,16 +4,6 @@ var gameover = document.querySelector('.gameover');
 score = 0;
 cross = true;
 
-
-audiogameover = new Audio('gameover.mp3')
-audioingame = new Audio('sound.mp3')
-
-    
-setTimeout(() => {
-        audioingame.play();
-}, 1000);
-
-
 document.onkeydown = function (e) {
     console.log("key code is: ", e.code);
     if (e.code == "ArrowUp") {
