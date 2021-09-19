@@ -1,6 +1,10 @@
 var mario = document.querySelector('.mario');
 var dragon = document.querySelector('.dragon');
 var gameover = document.querySelector('.gameover');
+
+audiogameover = new Audio('gameover.mp3')
+
+
 score = 0;
 cross = true;
 
@@ -37,7 +41,6 @@ setInterval(() => {
     if (offSetX < 82 && offSetY < 60){
         gameover.innerHTML = "Game Over - Reload to Play Again!";
         dragon.classList.remove('animategragon');
-        audioingame.pause(); 
         audiogameover.play();
     }
     
